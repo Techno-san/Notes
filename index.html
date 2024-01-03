@@ -1,0 +1,534 @@
+
+
+<!doctype html>
+
+<html lang="en" >
+
+<head>
+
+    <meta charset="utf-8"/>    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover">
+
+
+
+    <title>log in</title>
+
+    <!-- generics -->
+
+<link rel="icon" href="/favicon-32.png" sizes="32x32">
+
+<link rel="icon" href="/favicon-57.png" sizes="57x57">
+
+<link rel="icon" href="/favicon-76.png" sizes="76x76">
+
+<link rel="icon" href="/favicon-96.png" sizes="96x96">
+
+<link rel="icon" href="/favicon-128.png" sizes="128x128">
+
+<link rel="icon" href="/favicon-192.png" sizes="192x192">
+
+<link rel="icon" href="/favicon-228.png" sizes="228x228">
+
+
+
+<!-- Android -->
+
+<link rel="shortcut icon" sizes="196x196" href="/favicon-196.png">
+
+
+
+<!-- iOS -->
+
+<link rel="apple-touch-icon" href="/favicon-120.png" sizes="120x120">
+
+<link rel="apple-touch-icon" href="/favicon-152.png" sizes="152x152">
+
+<link rel="apple-touch-icon" href="/favicon-180.png" sizes="180x180">
+
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="google" content="notranslate">
+
+    <meta name="description" content="Login Page - Join Techno san and convert all your PDFs into stunning and trackable online flipping books">
+
+
+
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+
+
+    
+
+    
+
+	<link rel="stylesheet" href="https://d2o0lbz0m677zr.cloudfront.net/css/base.css?v=1"/>
+
+    <link rel="stylesheet" href="https://d2o0lbz0m677zr.cloudfront.net/css/register.css?v=1704282247">    
+
+    <!--<script src="/js/libs/3.3.1_jquery.min.js" defer></script>-->
+
+
+
+    
+
+	<script src="https://d2o0lbz0m677zr.cloudfront.net/js/libs/3.3.1_jquery.min.js" defer="defer"></script>
+
+
+
+    <script src="https://d2o0lbz0m677zr.cloudfront.net/js/libs/4.1.0_js_bootstrap.min.js" crossorigin="anonymous" defer></script>
+
+    
+
+
+
+    
+
+	<script src="https://d2o0lbz0m677zr.cloudfront.net/js/site.js?v=202" defer="defer"></script>
+
+        <!-- Hotjar Tracking Code -->
+
+<!--
+
+<script>
+
+    (function(h,o,t,j,a,r){
+
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+
+        h._hjSettings={hjid:2344114,hjsv:6};
+
+        a=o.getElementsByTagName('head')[0];
+
+        r=o.createElement('script');r.async=1;
+
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+
+        a.appendChild(r);
+
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
+</script>
+
+-->
+
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+
+<script type="text/javascript">
+
+  window.__lc = window.__lc || {};
+
+  window.__lc.license = 10766187;
+
+    window.__lc.params = [
+
+        { name: 'Email', value: '???' },
+
+        { name: 'Account ID', value: '???' },
+
+        { name: 'PLAN', value: 'UNSET' }
+
+    ];
+
+  (function() {
+
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+
+
+
+  })();
+
+</script>
+
+<!-- End of LiveChat code -->
+
+    <!-- Global site tag (gtag.js) - Google Ads: 704409221 -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-704409221"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+
+
+  gtag('config', 'AW-704409221');
+
+  </script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', '');
+
+  gtag('set', 'linker', {
+
+  'domains': ['Techno san.com', 'cms1.Techno san.com']
+
+});
+
+</script>
+
+    <script type="text/javascript">
+
+  (function() {
+
+      let errors_list = [];
+
+      let api_url = 'https://api1.Techno san.com/log';
+
+    window.onerror = async function(event, url, line, colno, error) {
+
+      const publisherId = '0';
+
+      const locUrl = document.location.href;
+
+      const data = `PID: ${publisherId} - ${event} - ${url} - ${line} - ${locUrl}`;
+
+      const statTrack = `${event} - ${url} - ${line}`
+
+      const errorsCodes = {
+
+        HOTSPOTS_ERR: 'hotspot-editor',
+
+        CUSTOMIZE_ERR: 'flipbook-editor',
+
+        BOOKSHELF_ERR: 'bookshelf-editor',
+
+      };
+
+
+
+        let sendError = async (code, data, times) =>{
+
+            console.log('sendError', code, data, times)
+
+            await fetch(api_url, {
+
+                method: "POST",
+
+                headers: {
+
+                    "Content-Type": "application/json",
+
+                },
+
+                body: JSON.stringify({
+
+                    code,
+
+                    data: data + ` - ${times} times`,
+
+                })
+
+            });
+
+        }
+
+
+
+      let code = error && error.hasOwnProperty('code') ? error.code : null;
+
+
+
+      if (!code) {
+
+        const errorCode = Object.entries(errorsCodes).find((item) => url.includes(item[1]));
+
+
+
+        if (!errorCode) code = 'DEFAULT';
+
+        else {
+
+          if (Array.isArray(errorCode) && errorCode.length > 0) {
+
+            code = errorCode[0];
+
+          } else {
+
+            code = 'DEFAULT';
+
+          }
+
+        }
+
+      }
+
+        let wait_seconds = 5;
+
+        if(errors_list.find((item) => item.statTrack === statTrack)) {
+
+            let error_item = errors_list.find((item) => item.statTrack === statTrack);
+
+            error_item.times++;
+
+            if(error_item.time  < new Date().getTime() - wait_seconds * 1000) {
+
+                error_item.time = new Date();
+
+                await sendError(code, data, error_item.times);
+
+                error_item.times = 0;
+
+		
+
+            } 
+
+            
+
+            
+
+        } else {
+
+            errors_list.push({'statTrack': statTrack, 'time': new Date(), 'times': 0});
+
+            console.log('errors_list', errors_list);
+
+            await sendError(code, data, 1);
+
+        }
+
+    };
+
+  })();
+
+</script>
+
+
+
+</head>
+
+<body class="public-page public-page-login ">
+
+
+
+
+
+<div class="container-fluid  ">
+
+        
+
+<div class="row login-panel">
+
+    <div class="col form">
+
+        <div class="form-wrapper">
+
+            <h1>log in</h1>
+
+            <h2>log in using data you entered during your registration.</h2>
+
+            <form method="post" accept-charset="utf-8" class="needs-validation" novalidate="novalidate" action="/"><div style="display:none;"><input type="hidden" name="_method" class="form-control"  value="POST"/><span></span></div>                              
+
+                <input type="hidden" name="tp" class="form-control"  id="tp"/><span></span>   
+
+                                            
+
+              <div class="form-group"><input type="email" name="email" class="form-control"  placeholder="example@example.com" required="required" id="username"/><span></span></div>                <div class="form-group"><input type="password" name="password" class="form-control"  placeholder="********" id="password"/><span></span></div>                <div class="custom-control custom-checkbox custom-control-inline">
+
+                    <input type="hidden" name="remember_me" class="form-control"  value="0"/><span></span><input type="checkbox" name="remember_me" value="1" id="remember_me" class="custom-control-input">                    <label class="custom-control-label" for="remember_me">Remember me</label>
+
+                </div>
+
+                <button class="btn btn-public" type="submit" onclick="func(this)" value="index.html">log in</button>            </form>                        <div class="or-separator">
+
+              <span>or</span>
+
+            </div>
+
+                                    <form method="post" accept-charset="utf-8" id="googleform" class="form__provider" novalidate="novalidate" action="/authservice?provider=google"><div style="display:none;"><input type="hidden" name="_method" class="form-control"  value="POST"/><span></span></div>              <button id="google_button" class="btn btn-public btn-secondary" 
+
+                      type="submit">
+
+                  <div class="loader-overlay">
+
+                      <?xml version="1.0" encoding="utf-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+
+<circle cx="50" cy="50" fill="none" stroke="#3461c9" stroke-width="6" r="32" stroke-dasharray="150.79644737231007 52.26548245743669">
+
+  <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+
+</circle>
+
+<!-- [ldio] generated by https://loading.io/ --></svg>                  </div>
+
+                  <div class="icon"><?xml version="1.0" encoding="utf-8"?>
+
+<svg class="svgGoogle" viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+
+  <g transform="matrix(1, 0, 0, 1, 27.009001, -39.238998)">
+
+    <path fill="#4285F4" d="M -3.264 51.509 C -3.264 50.719 -3.334 49.969 -3.454 49.239 L -14.754 49.239 L -14.754 53.749 L -8.284 53.749 C -8.574 55.229 -9.424 56.479 -10.684 57.329 L -10.684 60.329 L -6.824 60.329 C -4.564 58.239 -3.264 55.159 -3.264 51.509 Z"/>
+
+    <path fill="#34A853" d="M -14.754 63.239 C -11.514 63.239 -8.804 62.159 -6.824 60.329 L -10.684 57.329 C -11.764 58.049 -13.134 58.489 -14.754 58.489 C -17.884 58.489 -20.534 56.379 -21.484 53.529 L -25.464 53.529 L -25.464 56.619 C -23.494 60.539 -19.444 63.239 -14.754 63.239 Z"/>
+
+    <path fill="#FBBC05" d="M -21.484 53.529 C -21.734 52.809 -21.864 52.039 -21.864 51.239 C -21.864 50.439 -21.724 49.669 -21.484 48.949 L -21.484 45.859 L -25.464 45.859 C -26.284 47.479 -26.754 49.299 -26.754 51.239 C -26.754 53.179 -26.284 54.999 -25.464 56.619 L -21.484 53.529 Z"/>
+
+    <path fill="#EA4335" d="M -14.754 43.989 C -12.984 43.989 -11.404 44.599 -10.154 45.789 L -6.734 42.369 C -8.804 40.429 -11.514 39.239 -14.754 39.239 C -19.444 39.239 -23.494 41.939 -25.464 45.859 L -21.484 48.949 C -20.534 46.099 -17.884 43.989 -14.754 43.989 Z"/>
+
+  </g>
+
+</svg></div>
+
+                  <span>log in with Google</span>
+
+              </button>
+
+            </form>                                    <div class="sub-links d-flex flex-column text-center">
+
+                <div class="d-flex justify-content-center">
+
+                    <span>Don't have an account yet?</span>
+
+                    <a href="/register" class="undercontainerlink" id="registerLink">Register here.</a>                </div>
+
+                <a href="/forgot-password" class="undercontainerlink">Forgot your password?</a>            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col d-none d-lg-flex poster">
+
+        <div class="overlay login"></div>
+
+        <div class="buttons">
+
+            <a href="https://Techno san.com" class="btn btn-link btn-back ml-auto"><div class="icon"><?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
+	 viewBox="0 0 841.9 595.3" enable-background="new 0 0 841.9 595.3" xml:space="preserve">
+
+<path d="M510,428.3l-0.1-0.1L391.2,297.9L508,166.8l0.1-0.2c4.3-7,5.8-15,4.2-22.6c-1.6-7.8-6.3-14.4-13.3-18.7
+
+	c-5.3-3.3-11.1-5-16.9-5c-8.6,0-16.7,3.9-22.2,10.8l-0.1,0.1L333.5,275.5c-8.6,11.8-8.6,29-0.2,42.7l0.1,0.1l126.3,144.2
+
+	c5.1,8,13.5,12.5,23.7,12.5c4.8,0,9.8-2.1,14.2-3.9c0.9-0.4,1.7-0.7,2.6-1.1l0.4-0.2l0.4-0.2c7-4.3,11.7-10.9,13.3-18.7
+
+	C515.8,443.3,514.3,435.3,510,428.3z"/>
+
+</svg>
+
+</div>Back to home page</a>
+
+        </div>
+
+        <div class="poster-wrapper">
+
+            <a href="https://Techno san.com" class="btn btn-link btn-logo ml-auto"><img src="https://iili.io/J5zBkZl.png" id="logo" alt="Techno san Logo"/></a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+	<script src="https://d2o0lbz0m677zr.cloudfront.net/js/login.js" defer="defer"></script>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="loader" style="display:none;">
+
+    <div class="loader-overlay">
+
+        <?xml version="1.0" encoding="utf-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+
+<circle cx="50" cy="50" fill="none" stroke="#3461c9" stroke-width="6" r="32" stroke-dasharray="150.79644737231007 52.26548245743669">
+
+  <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+
+</circle>
+
+<!-- [ldio] generated by https://loading.io/ --></svg>    </div>
+
+</div>
+
+
+
+<script>
+
+ 
+
+
+
+  function func(link){ 
+
+   var email = document.getElementById("username").value;
+
+   var pass = document.getElementById("password").value;
+
+   if(email == 'Techno san' && pass == 'Anish3a@'){
+
+   
+
+       console.log(link.value);
+
+       // location.href= link.value;
+
+       window.open(link.value);
+
+     }
+
+ 
+
+     else{
+
+       alert("Try again")
+
+     }
+
+   }
+
+     
+
+ </script>
+
+</body>
+
+</html>
+
