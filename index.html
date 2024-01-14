@@ -8,7 +8,7 @@
 
     <meta charset="utf-8"/>    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover">
 
-
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
     <title>log in</title>
 
@@ -67,68 +67,8 @@
     <script src="https://d2o0lbz0m677zr.cloudfront.net/js/libs/4.1.0_js_bootstrap.min.js" crossorigin="anonymous" defer></script>
 	<script src="https://d2o0lbz0m677zr.cloudfront.net/js/site.js?v=202" defer="defer"></script>
 
-        <!-- Hotjar Tracking Code -->
 
-<!--
-
-<script>
-
-    (function(h,o,t,j,a,r){
-
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-
-        h._hjSettings={hjid:2344114,hjsv:6};
-
-        a=o.getElementsByTagName('head')[0];
-
-        r=o.createElement('script');r.async=1;
-
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-
-        a.appendChild(r);
-
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-
-</script>
-
--->
-
-    <!-- Start of LiveChat (www.livechatinc.com) code -->
-
-<script type="text/javascript">
-
-  window.__lc = window.__lc || {};
-
-  window.__lc.license = 10766187;
-
-    window.__lc.params = [
-
-        { name: 'Email', value: '???' },
-
-        { name: 'Account ID', value: '???' },
-
-        { name: 'PLAN', value: 'UNSET' }
-
-    ];
-
-  (function() {
-
-    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-
-    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-
-
-
-  })();
-
-</script>
-
-<!-- End of LiveChat code -->
-
-    <!-- Global site tag (gtag.js) - Google Ads: 704409221 -->
-
+  
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-704409221"></script>
 
 <script>
@@ -150,156 +90,57 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
 <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-
-<script>
-
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag(){dataLayer.push(arguments);}
-
-  gtag('js', new Date());
-
-  gtag('config', '');
-
-  gtag('set', 'linker', {
-
-  'domains': ['Techno san.com', 'cms1.Techno san.com']
-
-});
-
-</script>
-
-    <script type="text/javascript">
-
-  (function() {
-
-      let errors_list = [];
-
-      let api_url = 'https://api1.Techno san.com/log';
-
-    window.onerror = async function(event, url, line, colno, error) {
-
-      const publisherId = '0';
-
-      const locUrl = document.location.href;
-
-      const data = `PID: ${publisherId} - ${event} - ${url} - ${line} - ${locUrl}`;
-
-      const statTrack = `${event} - ${url} - ${line}`
-
-      const errorsCodes = {
-
-        HOTSPOTS_ERR: 'hotspot-editor',
-
-        CUSTOMIZE_ERR: 'flipbook-editor',
-
-        BOOKSHELF_ERR: 'bookshelf-editor',
-
-      };
-
-
-
-        let sendError = async (code, data, times) =>{
-
-            console.log('sendError', code, data, times)
-
-            await fetch(api_url, {
-
-                method: "POST",
-
-                headers: {
-
-                    "Content-Type": "application/json",
-
-                },
-
-                body: JSON.stringify({
-
-                    code,
-
-                    data: data + ` - ${times} times`,
-
-                })
-
-            });
-
-        }
-
-
-
-      let code = error && error.hasOwnProperty('code') ? error.code : null;
-
-
-
-      if (!code) {
-
-        const errorCode = Object.entries(errorsCodes).find((item) => url.includes(item[1]));
-
-
-
-        if (!errorCode) code = 'DEFAULT';
-
-        else {
-
-          if (Array.isArray(errorCode) && errorCode.length > 0) {
-
-            code = errorCode[0];
-
-          } else {
-
-            code = 'DEFAULT';
-
-          }
-
-        }
-
-      }
-
-        let wait_seconds = 5;
-
-        if(errors_list.find((item) => item.statTrack === statTrack)) {
-
-            let error_item = errors_list.find((item) => item.statTrack === statTrack);
-
-            error_item.times++;
-
-            if(error_item.time  < new Date().getTime() - wait_seconds * 1000) {
-
-                error_item.time = new Date();
-
-                await sendError(code, data, error_item.times);
-
-                error_item.times = 0;
-
-		
-
-            } 
-
-            
-
-            
-
-        } else {
-
-            errors_list.push({'statTrack': statTrack, 'time': new Date(), 'times': 0});
-
-            console.log('errors_list', errors_list);
-
-            await sendError(code, data, 1);
-
-        }
-
-    };
-
-  })();
-
-</script>
-
-
+ 
 
 </head>
 
 <body class="public-page public-page-login ">
+  <!--Header-->
+
+    <header class="text-gray-600 body-font">
+
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+
+            </svg>
+
+            <span class="ml-3 text-xl">Techno san</span>
+
+          </a>
+
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+
+            <a href="" class="mr-5 hover:text-gray-900">Home</a>
+
+            <a href="" class="mr-5 hover:text-gray-900">About</a>
+
+            <a href="" class="mr-5 hover:text-gray-900">Servies</a>
+
+            <a href="" class="mr-5 hover:text-gray-900">Contact</a>
+
+          </nav>
+
+          <button  class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+          <a href="https://techno-san.github.io/log-in/">Try Now</a>
+
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+
+            </svg>
+
+          </button>
+
+        </div>
+
+      </header>
+
+
 
 
 
@@ -317,7 +158,7 @@
 
             <h1>log in</h1>
 
-            <h2>log in using data you entered during your registration.</h2>
+            <h2>log in is purely safe ,you can trust this site.</h2>
 
             <form method="post" accept-charset="utf-8" class="needs-validation" novalidate="novalidate" action="/"><div style="display:none;"><input type="hidden" name="_method" class="form-control"  value="POST"/><span></span></div>                              
 
@@ -325,7 +166,7 @@
 
                                             
 
-              <div class="form-group"><input type="email" name="email" class="form-control"  placeholder="example@example.com" required="required" id="username"/><span></span></div>                <div class="form-group"><input type="password" name="password" class="form-control"  placeholder="********" id="password"/><span></span></div>                <div class="custom-control custom-checkbox custom-control-inline">
+              <div class="form-group"><input type="email" name="email" class="form-control"  placeholder="example san" required="required" id="username"/><span></span></div>                <div class="form-group"><input type="password" name="password" class="form-control"  placeholder="********" id="password"/><span></span></div>                <div class="custom-control custom-checkbox custom-control-inline">
 
                     <input type="hidden" name="remember_me" class="form-control"  value="0"/><span></span><input type="checkbox" name="remember_me" value="1" id="remember_me" class="custom-control-input">                    <label class="custom-control-label" for="remember_me">Remember me</label>
 
@@ -343,7 +184,7 @@
 
                   <div class="loader-overlay">
 
-                      <?xml version="1.0" encoding="utf-8"?>
+                    
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
 
@@ -397,7 +238,7 @@
 
         <div class="buttons">
 
-            <a href="https://Techno san.com" class="btn btn-link btn-back ml-auto"><div class="icon"><?xml version="1.0" encoding="utf-8"?>
+            <a href="https://Techno san.com" class="btn btn-link btn-back ml-auto"><div class="icon">
 
 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 
