@@ -31,6 +31,7 @@
             </div>
           </header>
           <!--login section-->
+<form name="formName" method="post">
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
           <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
@@ -49,23 +50,35 @@
                 <input type="password" id="password" name="password" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
               </div>
             
-            <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="func(this)" value="https://techno-san.github.io/Sem-distribution/">log-in</button>
+            <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"  value="https://techno-san.github.io/Sem-distribution/">log-in</button>
             <p class="text-xs text-gray-500 mt-3">Literally you probably haveheard of them jean shorts.</p>
           </div>
         </div>
       </section>
+</form>
       <!--login script-->
       <script>
-        function func(link){
-            var email = document.getElementById("email").value;
-            var pass = document.getElementById("password").value;
-            if (email == 'Techno san' && pass == 'Sam sam tech') {
-                console.log(link.value);
-                window.open(link.value)
-            } else {
-                alert("SORRY! Site will open before the exam. contect: 6232274994")
-            }
-        }
-      </script>
+
+			const scriptURL = 'https://docs.google.com/spreadsheets/d/1TfoxNORXk1qh40dXAPggwLxibY5clyCcCuKwd1pPgNM/edit#gid=0'
+
+			const form = document.forms['formName']
+
+		  
+
+			form.addEventListener('submit', e => {
+
+			  e.preventDefault()
+
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+
+				.then(() => {  window.location.reload(); })
+
+				.catch(error => console.error('Error!', error.message))
+
+			})
+
+		  </script>
 </body>
 </html>
